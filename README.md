@@ -1,5 +1,4 @@
 # Notes and discussions in mathematics:
-
 ## Abstract Algebra
 - [Module Theory](module_theory.pdf)
 
