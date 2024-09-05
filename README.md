@@ -5,7 +5,7 @@
 
 _______
 
-Copyright (C) [Anamitro Biswas](https://anamitro.github.io)
+Copyright (C) [Anamitro Biswas](https://anamitro.github.io) 2024
 
 For queries or suggestions,
 
