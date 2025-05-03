@@ -1,9 +1,13 @@
 # Notes and discussions in mathematics:
-## Abstract Algebra
-- [Module Theory](module_theory.pdf)
 
 ## Related to my research
 - [A Basic Introduction to Fuzzy Topology](fuzzy_topology_notes.pdf)
+
+## Topology
+- [Product Topology and Box Topology](Product_topology_and_box_topology.pdf)
+
+## Abstract Algebra
+- [Module Theory](module_theory.pdf)
 
 ## Measure Theory
 - [Lebesgue measure, Roydon-Fitzpatrick's *Real Analysis* chapter 2, solutions](Lebesgue_measure_Royden-F_ch1.pdf)
