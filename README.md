@@ -16,7 +16,7 @@ I mostly made these notes as a part of my reading and understanding, and often a
 ## Measure Theory
 - [Lebesgue measure, Roydon-Fitzpatrick's *Real Analysis* chapter 2, solutions](Lebesgue_measure_Royden-F_ch1.pdf)
 
-# COURSES TAUGHT, you can find the notes here:
+## COURSES TAUGHT, you can find the notes here:
 - [Mathematics-1, MAL101 at IIT Bhilai as a teaching assistant](https://anamitro.github.io/math1)
 
 _______
