@@ -17,7 +17,7 @@ I mostly made these notes as a part of my reading and understanding, and often a
 - [Lebesgue measure, Roydon-Fitzpatrick's *Real Analysis* chapter 2, solutions](Lebesgue_measure_Royden-F_ch1.pdf)
 
 # COURSES TAUGHT, you can find the notes here:
-- [Mathematics-1, MAL101 at IIT Bhilai as a teaching assistant](https://anamitro.github.io/math101)
+- [Mathematics-1, MAL101 at IIT Bhilai as a teaching assistant](https://anamitro.github.io/math1)
 
 _______
 If you find any mistake, mathematical, grammatical or typographic, please let me know (email: anamitroappu@gmail.com) and I shall correct it as soon as possible.
