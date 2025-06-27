@@ -7,8 +7,10 @@ I mostly made these notes as a part of my reading and understanding, and often a
 
 ## Topology
 - [Product Topology and Box Topology](Product_topology_and_box_topology.pdf)
-- [Basic Homotopy Theory](basic_homotopy_theory.pdf)
-- [CW Complexes: how to build them](cw_complexes)
+- [Basic Homotopy Theory, and CW Complexes: How To Build Them](homotopy.pdf)
+
+## Homological Algebra
+- [Ext Functor](ext.pdf)
 
 ## Abstract Algebra
 - [Module Theory](module_theory.pdf)
