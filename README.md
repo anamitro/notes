@@ -2,20 +2,16 @@
 
 I mostly made these notes as a part of my reading and understanding, and often as the outcome of a presentation at our institute.
 
-## Related to my research
-- [A Basic Introduction to Fuzzy Topology](fuzzy_topology_notes.pdf)
-
 ## Topology
 - [Product Topology and Box Topology](Product_topology_and_box_topology.pdf)
-- [Basic Homotopy Theory, and CW Complexes: How To Build Them](homotopy.pdf)
+- [A Basic Introduction to Fuzzy Topology](fuzzy_topology_notes.pdf)
+- [Basic Homotopy Theory, and CW Complexes: How To Build Them](topology/homotopy.pdf)
 
-## Homological Algebra
-- [Ext Functor](ext.pdf)
-
-## Abstract Algebra
+## Algebra
 - [Module Theory](module_theory.pdf)
+- [Ext Functor](algebra/ext.pdf)
 
-## Measure Theory
+## Analysis
 - [Lebesgue measure, Roydon-Fitzpatrick's *Real Analysis* chapter 2, solutions](Lebesgue_measure_Royden-F_ch1.pdf)
 
 ## COURSES TAUGHT, you can find the notes here:
