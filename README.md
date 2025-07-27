@@ -1,6 +1,6 @@
 # Notes and discussions in mathematics:
 
-I mostly made these notes as a part of my reading and understanding, and often as the outcome of a presentation at our institute.
+I mostly made these notes as a part of my reading and understanding. When I found that some of my notes offer a possibly different approach from the texts I had read myself, I decided to share them here.
 
 ## Topology
 - [Product Topology and Box Topology](Product_topology_and_box_topology.pdf)
