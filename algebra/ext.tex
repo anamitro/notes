@@ -1,0 +1,341 @@
+\documentclass[a4paper,11pt, tikz]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{textcomp}
+%\usepackage{newspaper}
+%\date{\today}
+%\currentvolume{1430}
+%\currentissue{6}
+%\usepackage{times}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{picinpar}
+%uasage of picinpar:
+%\begin{window}[1,l,\includegraphics{},caption]xxxxx\end{window}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[nohead, nomarginpar, margin=1in, foot=.25in]{geometry}
+\usepackage{lmodern}
+%\usepackage{fontspec}
+\usepackage{setspace}
+%\usepackage{fancyhdr}
+\usepackage{everyshi}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{pgfpages}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[notextcomp]{stix}
+ \usepackage{paracol}
+ \usepackage{stmaryrd}
+ \usepackage{xurl}
+ \usepackage{wasysym}
+\usepackage{tikz}
+ \usetikzlibrary{cd}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+%\pagestyle{fancy}
+%\lhead{Curriculum vitae, Anamitro Biswas}
+%\chead{}
+%\rhead{}
+%\lfoot{}
+%\cfoot{\thepage}
+%\rfoot{}
+%\makeatletter
+%\renewcommand{\@chapapp}{Document}
+%\makeatother
+%\renewcommand\refname{\enhead\color{red}{References:}}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\enhead{RubikDoodleShadow-Regular.ttf}[Script=Latin]
+%\setmainfont{cmunrm.ttf}[Script=Latin]
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\latinfont{OfenbacherSchwabCAT.ttf}[Script=Latin]
+
+%ALGEBRAIC TOPOLOGY:
+\newcommand{\rel}{\text{ rel}}
+
+%BRACKETS:
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\lc}{\left\lbrace}
+\newcommand{\rc}{\right\rbrace}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+
+%CATEGORY THEORY:
+\newcommand{\Ab}{\mathcal{A}\mathfrak{b}}
+\newcommand{\Top}{\mathcal{T}\mathfrak{o}\mathfrak{p}}
+
+%DASH AND BAR:
+\newcommand{\dash}{^\prime}
+\newcommand{\ddash}{^{\prime\prime}}
+\newcommand{\tdash}{^{\prime\prime\prime}}
+
+%FIELDS:
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%FUZZY TOPOLOGY:
+\newcommand{\nphi}{\bigodot}
+
+%GREEK UPPERCASE:
+\newcommand{\Lm}{\Lambda}
+\newcommand{\G}{\Gamma}
+\newcommand{\D}{\Delta}
+\newcommand{\Th}{\Theta}
+\newcommand{\F}{\Phi}
+
+%GREEK LOWERCASE:
+\newcommand{\m}{\mu}
+\newcommand{\lm}{\lambda}
+\newcommand{\vs}{\varsigma}
+\newcommand{\g}{\gamma}
+\renewcommand{\t}{\tau}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\e}{\varepsilon}
+\newcommand{\dt}{\delta}
+\newcommand{\f}{\varphi}
+\newcommand{\z}{\zeta}
+\newcommand{\s}{\sigma}
+\newcommand{\p}{\pi}
+\newcommand{\y}{\eta}
+\renewcommand{\th}{\theta}
+\newcommand{\dl}{\partial}
+
+%GROUP THEORY:
+\newcommand{\inv}{^{-1}}
+
+%HOMOLOGICAL ALGEBRA:
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\Ext}{\text{Ext}}
+\newcommand{\im}{\text{im~}}
+%\newcommand{\lsft}{shift left=1.5ext}
+
+%HOMTOPY GROUPS:
+\newcommand{\htopo}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\topo}{\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\htop}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}}
+\newcommand{\cattop}{\mathcal{T}\mathfrak{o}\mathfrak{p}}
+
+%LOGIC:
+\renewcommand{\implies}{\Rightarrow}
+
+%MATHCAL:
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\List}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\Pa}{\mathcal{P}}
+\newcommand{\La}{\mathcal{L}}
+\newcommand{\Ta}{\mathcal{T}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\Y}{\mathcal{Y}}
+
+%MATHFRAK:
+\newcommand{\Mf}{\mathfrak{M}}
+\newcommand{\Nf}{\mathfrak{N}}
+\newcommand{\gf}{\mathfrak{g}}
+\newcommand{\mfi}{\mathfrak{i}}
+\newcommand{\mfj}{\mathfrak{j}}
+\newcommand{\mfa}{\mathfrak{A}}
+
+%MATH BOLD:
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfg}{\mathbf{g}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\bfy}{\mathbf{y}}
+\newcommand{\bfzero}{\mathbf{0}}
+
+
+%MAPS:
+\newcommand{\tends}{\rightarrow}
+\newcommand{\id}{\text{id}}
+
+
+
+%SET THEORY:
+\newcommand{\cl}{\overline}
+\newcommand{\intr}{^\circ}
+\newcommand{\ir}{^\text{int}}
+\newcommand{\comp}{^C}
+
+%HEADINGS:
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{obs}[thm]{Observation}
+%\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{note}[thm]{Note}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{prob}[thm]{Problem}
+\newcommand{\Ob}{\text{Ob}}
+\newcommand{\Eq}{\text{Eq}}
+
+%\setmainfont{Cormorant Garamond SemiBold}
+\urlstyle{same}
+\usepackage{tikzpagenodes}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\begin{document}
+\title{Ext Functor}
+\author{Anamitro Biswas\\Email: anamitroappu@gmail.com}
+\maketitle
+\section{Projective Resolution}
+\noindent{}Let $P$ be a module. For any surjective map $g:B\tends C\tends 0$. if $f:P\tends C$ always has a lifting $h:P\tends B$, we say that $P$ is \emph{projective}.
+Let $A$ be an abelian group. Consider a projective resolution of $A$
+$$P_\#: \dots\xrightarrow{\dl_{n+2}} P_{n+1}\xrightarrow{\dl_{n+1}} P_n\xrightarrow{\dl_{n}} P_{n-1}\xrightarrow{\dl_{n-1}}\dots\xrightarrow{\dl_{3}} P_2\xrightarrow{\dl_{2}} P_1\xrightarrow{\dl_{1}} P_0\xrightarrow{\dl_{0}} A\xrightarrow{\eta} 0,$$
+where each $P_i$ is projective and the sequence is exact. Additionally, if each $P_i$ is free, we call $P_\#$ a \emph{free resolution}.
+For a commutative ring with $1$, $R$, applying the $\Hom_R$ functor with an abelian group $G$, we get a cochain complex that might not be exact:
+$$0\xrightarrow{d_{\y}}\Hom_R\lb A, G\rb\xrightarrow{d_{0}}\Hom_R\lb P_0, G\rb\xrightarrow{d_{1}}\Hom_R\lb P_1, G\rb\xrightarrow{d_{2}}\dots$$
+The $n$th cohomology group of this cochain complex gives sort of a measurement of the non-exactness of this cochain complex at the $n$th position. We define that $n$th cohomology group as the $\Ext$ functor from $\Ab^2$ to $\Ab$,
+$$\Ext_R^n\lb A, G\rb\coloneq \ker d_{n+1}/\im d_n.$$
+
+It can be proved that this $\Ext$ functor does not depend on the particular projective resolution taken, and is just a function of $A$ and $G$.
+
+If the cochain complex is exact at any point, which will be the case if $A$ is a free abelian group and $P$ a free resolution of $A$, then $\Ext_R^n\lb A, G\rb$ is trivial there.\\
+
+\noindent{}\textit{If $A$ is a free abelian group.} Then the free abelian group generated by $A$ is $A$. Thus we have the chain $0\xrightarrow{} R=\ker\f\xrightarrow{} \cF(A)=A\xrightarrow{\f} A\xrightarrow{} 0$, where $\f$ ends up being the identity map, and hence $R=0$. So $\dl_0$ is just the identity map on $A$, and $\dl_1$ takes whole of $A$ to $0$; accordingly, $\Ext_R^0\lb A, G\rb\coloneq \ker d_{1}/\im d_0$ is trivial. It is also conversely true that a trivial $\Ext^0$ means that the concerned entry abelian group is free. If we consider the exact sequence with the canonical homomorphism $\cF(A)\tends A$, by assumption it splits which implies that $A$ is projective (because it's a direct summand of the free abelian group $\cF(A)$), hence free, abelian group.\\
+
+\section{Examples}
+\noindent{}\textbf{Example 1.} Let $A=\Z/m\Z$. Consider
+\begin{equation*}
+\begin{tikzcd}
+0 \arrow[r, "\dl_2"] & \Z \arrow[r, "\dl_1", "m"'] & \Z \arrow[r, "\dl_0"] & {\Z/m\Z} \arrow[r] & 0
+\end{tikzcd}
+\end{equation*}
+This gives us (taking $R=\Z$)
+\begin{equation*}
+\begin{tikzcd}
+0 \arrow[r] & \Hom\lb \Z/m\Z, G\rb\arrow[r, "d_0"] & \Hom\lb \Z, G\rb \arrow[r, "d_1"] & \Hom\lb \Z, G\rb \arrow[r, "d_2"] & 0
+\end{tikzcd}
+\end{equation*}
+We have the following commutative diagram:
+\begin{equation*}
+\begin{tikzcd}
+&  &\\
+\color{red}{\cl{m\b}\in}\color{black}{}\Z/m\Z \arrow[dd, "\f"] & \Z\color{red}{\ni m\b}\color{black}{} \arrow[l, "\p"'] \arrow [ddl, dashrightarrow, "\psi"] & \\
+& & \Z\color{red}{\ni\b}\color{black}{} \arrow[ul, "m"] \arrow[dll, dashrightarrow, "m\psi"]\\
+\color{red}{g\in}\color{black}{} G & &
+\end{tikzcd}
+\end{equation*}
+Here, $d_0\lb \f\rb=\f\circ \pi$, hence $\im d_0=\lc \text{periodic functions with period } m\rc$ and $\ker d_1=\lc \psi: \Z\tends G~\mid~\psi\lb m\b\rb\right.$ $\left.=0~\forall~\b\in\Z\rc$. Therefore
+$$\Ext^0\lb \Z/m\Z, G\rb=\dfrac{\ker d_1}{\im d_0}=\dfrac{\lc\psi:\Z\tends G~|~\psi\lb m\b\rb=m\psi\lb \b\rb=0~\forall~\b\in\Z\rc}{\lc \psi:\Z\tends G~|~\psi\lb \a+m\rb=\psi\lb \a\rb~\forall~\a\in\Z\rc}.$$
+Now, for a $[\psi]\in\Ext^0\lb \Z/m\Z, G\rb$, $m\psi\equiv 0\implies m\psi\lb \b\rb=0~\forall~\b\in\Z\implies m\psi\lb \b+m\rb=0\implies m\psi(\b)+m\psi(m)=0\text{ since $\psi$ is a homomorphism }\implies m\psi(m)=0$.
+
+Define $\z:\Hom\lb \Z, G\rb\tends G;~\psi\mapsto \psi(m)=g\in G$. This is well-defined. Therefore I can identify classes of $\psi$ with corresponding elements of $g$ such that $mg=0_G$. So, $\Ext^0\lb \Z/m\Z, G\rb\approx {}_mG=\lc g\in G~|~mg=0\rc$.
+
+Now, let us calculate $\Ext^1\lb \Z/m\Z, G\rb=\dfrac{\ker d_2}{\im d_1}=\dfrac{\Hom\lb \Z, G\rb}{m\Hom\lb \Z, G\rb}$.\\
+
+\begin{equation*}
+\begin{tikzcd}
+\Z \arrow[dr, dashrightarrow, "d_1\f"] &&  \Z \arrow[ll, "m"']\arrow[dl, "\f"]\\
+&G&
+\end{tikzcd}
+\end{equation*}
+If $\f\in\Hom\lb\Z, G\rb$, as soon as we define $\f(1)$, $\f$ is fully defined. So, one $\f$ is equivalent to one element $g\in G$ where $\f(1)$ is assigned. So, $\Hom\lb\Z, G\rb\approx G\implies Ext^1\lb \Z/m\Z, G\rb\approx G/m G$.
+
+Note here that if $|G|\not\mid m$, then $\Ext^0\lb \Z/m\Z, G\rb$ is non-trivial, providing us with an example of a non-trivial $\Hom$-cochain and $\Ext$, showing that the definition is vacuously true. Furthermore, $\Hom\lb\Z/m\Z, G\rb\tends \Hom\lb\Z, G\rb$ is non-trivial only if $G$ has a torsion.
+%\textbf{Example 2.}
+
+\section{Independence of $\Ext$ on resolution}
+
+\begin{thm}
+Let $A, A\dash\in\Ab$. If a homomorphism $f:A\tends A\dash$ exists, it would induce a chain map $f_\#$ in the following scenario:
+
+\begin{equation*}
+\begin{tikzcd}
+\dots\ar[r, "\dl_3"] &P_2\arrow[r, "\dl_2"] \ar[d, dashrightarrow, "f_2"] &P_1\arrow[r, "\dl_1"] \ar[d, dashrightarrow, "f_1"]&P_0\arrow[r, "\dl_0"] \ar[d, dashrightarrow, "f_0"]& A\ar[r, "\y"] \ar[d, "f"]& 0\\
+\dots\ar[r, "\dl_3"] &P_2\dash\arrow[r, "\dl_2\dash"]  &P_1\dash\arrow[r, "\dl_1\dash"]&P_0\dash\arrow[r, "\dl_0\dash"] & A\dash\ar[r, "\y\dash"]& 0
+\end{tikzcd}
+\end{equation*}
+if each $P_i$ in the above row is projective and the bottom row is exact. Moreover, any two such chain maps will be homotopic.
+\end{thm}
+We prove by induction on $n\geq 0$. Since $P_0$ is projective, the following commutative diagram proves the existence of $f_0$
+\begin{equation*}
+\begin{tikzcd}
+& P_0\ar[dl, dashrightarrow, "f_0"'] \ar[d, "f\dl_0"]\\
+P_0\dash\ar[r, "\dl_0\dash"']& A\dash
+\end{tikzcd}
+\end{equation*}
+For the induction step, consider
+\begin{equation*}
+\begin{tikzcd}
+P_{n+1}\ar[r, "\dl_{n+1}"]\ar[d, dashrightarrow] & P_n\ar[r, "\dl_n"]\ar[d, "f_n"] & P_{n-1}\ar[r]\ar[d, "f_{n-1}"] & \dots\\
+P_{n+1}\dash\ar[r, "\dl_{n+1}\dash"] & P_n\dash\ar[r, "\dl_n\dash"] & P_{n-1}\dash\ar[r] & \dots
+\end{tikzcd}
+\end{equation*}
+We can have this implication due to projectivity of $P_{n+1}$
+\begin{equation*}
+\begin{tikzcd}
+& P_{n+1}\ar[dl, dashrightarrow, "f_{n+1}"']\ar[d, "f_n\dl_{n+1}"]&\\
+P_{n+1}\dash\ar[r, "\dl_{n+1}\dash"'] & \im\dl_{n+1}\dash\ar [r] & 0
+\end{tikzcd}
+\end{equation*}
+only if $\im\lb f_n\dl_{n+1}\rb\subset \im \dl_{n-1}\dash=\ker\dl_n\dash$, which is true since $\dl_n\dash f_n\dl_{n+1}=f_{n-1}\dl_n\dl_{n+1}=f_{n-1}0=0$. Thus by induction we have proved the existence of the chain map $f_\#$. On to its uniqueness up to homotopy equivalence.
+
+Consider the chain complexes where we have to construct the homotopy map $s_\#$,
+\begin{equation*}
+\begin{tikzcd}
+{} &P_{n+1}\ar[r, "\dl_{n+1}"]\ar[d, "h_{n+1}"', shift right=3ex, blue] \ar[d, "f_{n+1}"', shift left=1ex, black] \ar[dl, "s_{n+1}"', red, shift right =2.5ex, dashrightarrow] & P_n\ar[r, "\dl_n"]\ar[d, "h_{n}"', shift right=1.5ex, blue] \ar[d, "f_{n}"', shift left=1.5ex, black] \ar[dl, "s_{n}"', red]  & P_{n-1}\ar[r]\ar[d, "h_{n-1}"', shift right=2ex, blue] \ar[dl, "s_{n-1}"', red] \ar[d, "f_{n-1}"', shift left=2ex, black]  & \dots \ar[r, "\dl_3"] &P_2\arrow[r, "\dl_2"] \ar[d, "h_{2}"', shift right=1.5ex, blue] \ar[d, "f_{2}"', shift left=1.5ex, black] \ar[dl, "s_{2}"', red] &P_1\arrow[r, "\dl_1"] \ar[d, "h_{1}"', shift right=1.5ex, blue] \ar[dl, "s_{1}"', red] \ar[d, "f_{1}"', shift left=1.5ex, black] &P_0\arrow[r, "\dl_0"] \ar[d, "h_{0}"', shift right=1.5ex, blue] \ar[dl, "s_{0}"', red]\ar[d, "f_{0}"', shift left=1.5ex, black] & A\ar[r, "\y"] \ar[dl, "s_{-1}"', red] \ar[d, "f"]& 0 \ar[dl, "s_{-2}"', red]\\
+{} &P_{n+1}\dash\ar[r, "\dl_{n+1}\dash"] & P_n\dash\ar[r, "\dl_n\dash"] & P_{n-1}\dash\ar[r] & \dots \ar[r, "\dl_3"] &P_2\dash\arrow[r, "\dl_2\dash"]  &P_1\dash\arrow[r, "\dl_1\dash"]&P_0\arrow[r, "\dl_0\dash"] & A\dash\ar[r, "\y\dash"]& 0
+\end{tikzcd}
+\end{equation*}
+such that $s_{n-1}\dl_n+\dl_{n+1}s_n=h_n-f_n~\forall~n\in\naturals\cup\lc -2, -1, 0\rc$. Putting $s_{-1}=0$ gives this for $n=0$. As for the inductive step, we have to show that the $s_n$'s so constructed satisfies $h_{n+1}-f_{n+1}-s_n\dl_{n+1}=\dl_{n+2}\dash s_{n+1}$ for the $(n+1)$th level. We have that $\lb h_{n+1}-f_{n+1}-s_n\dl_{n+1}\rb\lb P_{n+1}\rb\subset P_{n+1}\dash$. Only if we can show that $\lb h_{n+1}-f_{n+1}-s_n\dl_{n+1}\rb\lb P_{n+1}\rb\subset \im\dl_{n+2}\dash=\ker\dl_{n+1}\dash$, then by surjectivity of $\dl_{n+2}\dash$ on its codomain, we have the following commutative diagram from where the projectivity of $P_{n+1}$ implies the existence of $s_{n+1}$ with the desired property.
+\begin{equation*}
+\begin{tikzcd}
+& P_{n+1}\ar[dl, dashrightarrow, "s_{n+1}"'] \ar[d, "h_{n+1}-f_{n+1}-s_n\dl_{n+1}"] &\\
+P_{n+2}\dash\ar[r, "\dl_{n+2}"] & P_{n+1}\dash\ar[r]& 0
+\end{tikzcd}
+\end{equation*}
+\begin{eqnarray*}
+ \text{But } \dl_{n+1}\dash\lb h_{n+1}-f_{n+1}-s_n\dl_{n+1}\rb &=& \dl_{n+1}\dash\lb h_{n+1}-f_{n+1}\rb-\lb \dl_{n+1}\dash s_n\rb\dl_{n+1}\\
+  &=& \dl_{n+1}\dash\lb h_{n+1}-f_{n+1}\rb-\lb h_n-f_n-s_{n-1}\dl_n\rb\dl_{n+1}~\ls\text{by induction hypothesis}\rs\\
+  &=& 0,~\text{since $h$ and $f$ are chain maps}.\square 
+\end{eqnarray*}
+This being established, we try to see where this homotopy maps through the $\Hom$ functor. Of course, for $\f:P_n\dash\tends G$, we get a map $\f\circ h_n:P_n\tends G$, so $h_n$ induces $\th: \Hom\lb P_n\dash, G\rb\tends \Hom\lb P_n, G\rb; \f\mapsto \f\circ h_n$. In a similar manner all the chain and homotopy maps are transferred to our commutative diagram through $\Hom$
+\begin{equation*}
+\begin{tikzcd}
+{\Hom\lb P_{n-1}, G\rb}\ar[r, "\D_n"] &{ \Hom\lb P_n, G\rb }& \\
+& {\Hom\lb P_n\dash, G\rb }\ar[ul, "\s_{n-1}"] \ar[u, "\th_n", shift left=1.5ex] \ar[u, "\f_n", shift right=1.5ex] \ar[r, "\D_{n+1}\dash"] &{ \Hom\lb P_{n+1}\dash, G\rb} \ar[ul, "\s_n"]
+\end{tikzcd}
+\end{equation*}
+In fact, a cochain complex is induced. As we know, $\Hom$ is a contravariant functor, and as shown below, the chain homotopy condition obtained previously gives $\th_n-\f_n=\s_n\D_{n+1}\dash+\D_n\s_{n-1}$, which gives the cochain homotopy relation between the two cochains obtained through $\Hom$ functor.
+
+Now, if $A=A\dash$, $f$ is instead an isomorphism, and the bottom row is projective as well, i.e., we are dealing with two projective resolutions of $A$. An ismorphism $f$ induces isomorphisms $P_n\tends P_n\dash$ by inducing homomorphisms both ways. All induced chain maps have been seen to be homtopic to the isomorphism, i.e., resolutions $P_\#$ and $P_\#\dash$ are homotopically equivalent. We know that cohomology groups of homotopic cochain maps are isomorphic. So the $\Ext$ functors, which are cohomology groups of the $\Hom$ cochains of the resolutions, are the same. That is, they are independent of the particular resolution chosen over $A$, and instead just depend on $A$ and $G$-- but also on the ring $R$ over which the homomorphisms are taken.
+\end{document}
