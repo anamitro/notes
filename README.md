@@ -6,7 +6,7 @@ I mostly made these notes as a part of my reading and understanding. When I foun
 - [Product Topology and Box Topology](Product_topology_and_box_topology.pdf)
 - [A Basic Introduction to Fuzzy Topology](fuzzy_topology_notes.pdf)
 - [Basic Homotopy Theory, and CW Complexes: How To Build Them](topology/homotopy.pdf)
-- [Fiber Bundles](topology/fiber.pdf) [Incomplete; I shall update on this pdf file from time to time.]
+- [Fiber Bundles](topology/fiber/fiber.pdf) [Incomplete; I shall update on this pdf file from time to time.]
 
 ## Algebra
 - [Module Theory](module_theory.pdf)
