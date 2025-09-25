@@ -5,13 +5,13 @@ I mostly made these notes as a part of my reading and understanding. When I foun
 ## Topology
 - [Product Topology and Box Topology](Product_topology_and_box_topology.pdf)
 - [A Basic Introduction to Fuzzy Topology](fuzzy_topology_notes.pdf)
-- [Basic Homotopy Theory, and CW Complexes: How To Build Them](topology/homotopy.pdf)
+- [Basic Homotopy Theory, and CW Complexes: How To Build Them](topology/homotopy/homotopy.pdf)
 - [Fiber Bundles](topology/fiber/fiber.pdf) [Incomplete; am still working on it; I shall update on this pdf file from time to time.]
 - [Discrete Morse Theory](topology/discrete_morse_theory/dmt.pdf) [ ” ]
 
 ## Algebra
 - [Module Theory](module_theory.pdf)
-- [Ext Functor](algebra/ext.pdf)
+- [Ext Functor](algebra/ext_functor/ext.pdf)
 
 ## Analysis
 - [Lebesgue measure, Roydon-Fitzpatrick's *Real Analysis* chapter 2, solutions](Lebesgue_measure_Royden-F_ch1.pdf)
