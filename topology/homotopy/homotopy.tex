@@ -1,0 +1,384 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{textcomp}
+%\usepackage{newspaper}
+%\date{\today}
+%\currentvolume{1430}
+%\currentissue{6}
+%\usepackage{times}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{picinpar}
+%uasage of picinpar:
+%\begin{window}[1,l,\includegraphics{},caption]xxxxx\end{window}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[nohead, nomarginpar, margin=1in, foot=.25in]{geometry}
+\usepackage{lmodern}
+%\usepackage{fontspec}
+\usepackage{setspace}
+%\usepackage{fancyhdr}
+\usepackage{everyshi}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{pgfpages}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[notextcomp]{stix}
+ \usepackage{paracol}
+ \usepackage{stmaryrd}
+ \usepackage{xurl}
+ \usepackage{wasysym}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+%\pagestyle{fancy}
+%\lhead{Curriculum vitae, Anamitro Biswas}
+%\chead{}
+%\rhead{}
+%\lfoot{}
+%\cfoot{\thepage}
+%\rfoot{}
+%\makeatletter
+%\renewcommand{\@chapapp}{Document}
+%\makeatother
+%\renewcommand\refname{\enhead\color{red}{References:}}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\enhead{RubikDoodleShadow-Regular.ttf}[Script=Latin]
+%\setmainfont{cmunrm.ttf}[Script=Latin]
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\latinfont{OfenbacherSchwabCAT.ttf}[Script=Latin]
+
+
+%BRACKETS:
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\lc}{\left\lbrace}
+\newcommand{\rc}{\right\rbrace}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+
+%GREEK UPPERCASE:
+\newcommand{\Lm}{\Lambda}
+\newcommand{\G}{\Gamma}
+\newcommand{\D}{\Delta}
+\newcommand{\Th}{\Theta}
+\newcommand{\F}{\Phi}
+
+%GREEK LOWERCASE:
+\newcommand{\m}{\mu}
+\newcommand{\lm}{\lambda}
+\newcommand{\vs}{\varsigma}
+\newcommand{\g}{\gamma}
+\renewcommand{\t}{\tau}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\e}{\varepsilon}
+\newcommand{\dt}{\delta}
+\newcommand{\f}{\varphi}
+\newcommand{\z}{\zeta}
+\newcommand{\s}{\sigma}
+\newcommand{\p}{\pi}
+
+%SET THEORY:
+\newcommand{\cl}{\overline}
+\newcommand{\intr}{^\circ}
+\newcommand{\ir}{^\text{int}}
+\newcommand{\comp}{^C}
+
+%MATHCAL:
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\List}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\Pa}{\mathcal{P}}
+\newcommand{\La}{\mathcal{L}}
+\newcommand{\Ta}{\mathcal{T}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\Y}{\mathcal{Y}}
+
+%MATHFRAK:
+\newcommand{\Mf}{\mathfrak{M}}
+\newcommand{\Nf}{\mathfrak{N}}
+\newcommand{\gf}{\mathfrak{g}}
+\newcommand{\mfi}{\mathfrak{i}}
+\newcommand{\mfj}{\mathfrak{j}}
+\newcommand{\mfa}{\mathfrak{A}}
+
+%FIELDS:
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\naturals}{\mathbb{N}}
+%MATH BOLD:
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfg}{\mathbf{g}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\bfy}{\mathbf{y}}
+\newcommand{\bfzero}{\mathbf{0}}
+
+%GROUP THEORY:
+\newcommand{\inv}{^{-1}}
+
+%FUZZY TOPOLOGY:
+\newcommand{\nphi}{\bigodot}
+
+%ALGEBRAIC TOPOLOGY:
+\newcommand{\rel}{\text{ rel}}
+
+%HOMTOPY GROUPS:
+\newcommand{\htopo}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\topo}{\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\htop}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}}
+\newcommand{\cattop}{\mathcal{T}\mathfrak{o}\mathfrak{p}}
+
+%MAPS:
+\newcommand{\tends}{\rightarrow}
+\newcommand{\id}{\text{id}}
+
+
+%DASH:
+\newcommand{\dash}{^\prime}
+\newcommand{\ddash}{^{\prime\prime}}
+\newcommand{\tdash}{^{\prime\prime\prime}}
+
+
+\newcommand{\Ob}{\text{Ob}}
+\newcommand{\Eq}{\text{Eq}}
+
+
+
+
+%HEADINGS:
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{obs}[thm]{Observation}
+%\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{note}[thm]{Note}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{prob}[thm]{Problem}
+
+%\setmainfont{Cormorant Garamond SemiBold}
+\urlstyle{same}
+\usepackage{tikzpagenodes}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\begin{document}
+\title{Basic Homotopy Theory, and CW Complexes: How To Build Them}
+\author{Anamitro Biswas\\Email: anamitroappu@gmail.com}
+\date{}
+\maketitle
+%\noindent\textit{Email:} anamitroappu@gmail.com;\\\textit{Phone:} +91 9051798881;\\\textit{Website: }\url{https://sites.google.com/view/anamitro}
+
+\section{Homotopy}
+\noindent{}Is $\mathbb{R}\approx \mathbb{R}^2$? No, since removing one point from $\reals$ makes it disconnected, while removing a countable number of points from $\reals^2$ does not create a disconnection. But they are in many ways similar, and one is an expansion of the other. Homeomorphism is a very rigid condition imposed upon similarity, and does not reflect the necessary conditions for our working cases of similarity.
+
+\begin{prob}We want a looser version of homeomorphism.
+\end{prob}
+
+\subsection{Homotopy of maps}
+\begin{defn}
+Let $f, g:X\tends Y$  be \textit{maps} (continuous functions). We say $f\simeq g$ if $\exists$ map $F:X\times I\tends Y~\ni~F(x,0)=f(x), F(x,1)=g(x)~\forall~x\in X$. $F$ is a homotopy from $f$ to $g$; $F:f\simeq g$.
+\end{defn}
+
+\begin{obs}``$\simeq$'' is an equivalence relation. Let $f\in\C(X, Y)$ be a map from $X$ to $Y$; $[f]=\lc g\in\C(X, Y)~\mid~f\simeq g\rc$, equivalence class of $f$.
+\end{obs}
+
+\textbf{Proof}. \begin{itemize}
+  \item[(i)]For any map $f:X\tends Y$, $f\simeq f$.
+  \item[] Here we simply consider $F(x,t)$ to be independent of $t$, and $F(x,t)=f(x)~\forall~x\in X$.
+  \item[(ii)]Let $f, f\dash:X\tends Y$. Then, $f\simeq f\dash\Rightarrow f\dash\simeq f$.
+  \item[]There exists homotopy $F:X\times I\rightarrow Y$ such that $F(x, 0)=f(x)$ and $F(x,1)=f\dash(x)$. We define $G:X\times I\rightarrow Y$ such that $G(x,t)=F(x, 1-t)~\forall~t\in[0,1]$. We have that $G$ is a homotopy between $f\dash$ and $f$.
+  \item[(iii)]Let $f, f\dash, f\ddash:X\tends Y$. Then, $f\simeq f\dash,f\dash\simeq f\ddash\Rightarrow f\simeq f\ddash$.
+  \item[]There exists $F:X\times I\tends Y$ such that $F(x,0)=f(x),~F(x,1)=f\dash(x)$ and $F\dash:X\times I\tends Y$ such that $F\dash(x,0)=f\dash(x),~F\dash(x,1)=f\ddash(x)$. Define $G:X\times I\tends Y$ with
+$$G(x,t)=\begin{cases}
+  F(x,2t)~&\text{for }t\in\left[0, \frac{1}{2}\right],\\
+  F\dash(x,2t-1)~&\text{for }t\in\left[\frac{1}{2}, 1\right].
+\end{cases}$$
+We note that $G$ is well-defined and for $t=\dfrac{1}{2}$, $F(x,2t)=f\dash(x)=F\dash(x, 2t-1)$. Because $G$ is continuous on the two closed subsets $X\times\left[0, \dfrac{1}{2}\right]$ and $X\times\left[\dfrac{1}{2}, 1\right]$ of $X\times I$, by \emph{Pasting Lemma}, $G$ is continuous throughout and the required homotopy.\Square 
+\end{itemize}
+
+
+\subsection{Homotopy equivalence of spaces}
+\begin{defn}
+Suppose $\exists~f:X\tends Y,g:Y\tends X~\ni~g\circ f\simeq\id_X, f\circ g\simeq\id_Y$. Then we say that $X$ is homotopically equivalent to $Y$, $X\simeq Y$, or that $X$ and $Y$ have the same homotopy type.
+\end{defn}
+
+\begin{obs}
+$X\approx Y\Rightarrow X\simeq Y$
+\end{obs}
+
+\textit{Proof.} $f^{-1}$ exists and is continuous. $g=f^{-1}$.
+
+\begin{rem}
+Converse is not true.
+\end{rem}
+
+\textit{Counterexample.} $X=\reals^2$, $Y=\lc (0,0)\rc$. $X\not\approx  Y$ since $X$ is not compact but $Y$ is. Let $F:\reals^2\times I\rightarrow\reals^2;~\lb x=\lb x_1, x_2\rb, t\rb\mapsto \lb 1-t\rb x~\left[x\in\reals^2, t\in[0,1]\right]$. Then, $F(x, 0)=\id_X$ and $F(x,1)=\id_Y$. So, there exists a homotopy from $\id_X$ to $\id_Y$.
+
+Alternatively, we define $i:\lc (0,0)\rc\tends \reals^2, (0,0)\mapsto (0,0);~c:\reals^2\tends\lc (0,0)\rc.$ Then $i\circ c:\reals^2\tends\reals^2; x\mapsto (0,0)~\forall x\in\reals^2$ and $c\circ i:\lc (0,0)\rc\tends\lc (0,0)\rc; c\circ i=\id_Y$.\Square 
+
+\begin{defn}
+A path-connected space is called \emph{contractible} is it is homotopically equivalent to a one-point space, i.e., it has the same homotopy type as a point.
+\end{defn}
+
+\begin{obs}
+Any 2 maps $f,g:X\tends Y$, where $Y$ is contractible, are homotopic.
+\end{obs}
+
+\textit{Proof.} Let Y be contractible. So there should exist a homotopy $H:1_Y\simeq f_c$ where $f_c:Y\tends \lc c\rc\subseteq Y$.
+
+Let $X$ be another space and we consider a map $g:X\tends Y$. Then $H\circ g:X\times I\tends Y$ is a homotopy between $g$ and the constant map $\tilde{f}:X\tends \lc c\rc\subseteq Y$. So every map $g:X\tends Y$ is homotopic to the constant map $\tilde{f}$. Since homotopy is an equivalent relation, this implies that all maps $X\tends Y$ are homotopic.\Square
+
+\begin{defn}
+A \emph{retraction} is a map $r$ from a space $X$ to its subset $A$, such that $r|_A=\id_A$.
+
+A deformation retraction is a homotopy $F:X\times I\tends A\subseteq X$ such that $F|_{A,I}=\id_A$. Here, additionally, the map $F$ is continuous. The retract is said to be ``relative $A$'' or $\rel A$.
+\end{defn}
+
+\subsection{Homotopy between Paths}
+\noindent{}For a topological space $X$, a \emph{path} is a map $\s:[0,1]\tends X$. A path is called a \emph{loop} at $x\in X$ if $\s(0)=\s(1)=x$.
+
+Let $\a$ and $\b$ be paths from $x$ to $y$ in $X$. We say that $\a$ \emph{is homotopic to} $\b$ relative to the endpoints $(0,1)$
+$$\a\simeq\b\rel(0,1)$$
+if $\exists~F:I\times I\tends X~\ni$
+\begin{eqnarray*}
+  F(s,0)=\a(s)~&\forall&s\in I;\\
+  F(s,1)=\b(s)~&\forall&s\in I;\\
+  F(0,t)=\a(0)=\b(0)=x~&\forall&t\in I;\\
+  F(1,t)=\a(1)=\b(1)=y~&\forall&t\in I.
+\end{eqnarray*}
+
+We define $F_t:I\tends X;~F_t(s)=F(s,t)$ for each fixed $t\in I$. Therefore, $F_t$ is also a path from $x$ to $y$. Thus, homotopy can be seen as kind of a continuous deformation of path $\a$ to path $\b$.
+
+We define $P\lb X;x,y\rb=\lc\a:I\tends X~|~\a(0)=x,a(1)=y\rc$. ``Being homotopic'' is an equivalence relation on $P\lb X;x,y\rb$ because
+
+\begin{itemize}
+  \item[(i)]Consider $F(s,t)=\a(s)\forall~s,t\in I$ which shows that $\a\simeq\a \rel(0,1)$, i.e., reflexivity.
+  \item[(ii)]If $F:\a\simeq\b\rel(0,1)$ then $G:I\times I\tends X;~G(s,t)=F(s,1-t)$ gives $G:\b\simeq\a\rel(0,1)$. Symmetry.
+  \item[(iii)]If we have $F:\a\simeq\b\rel(0,1)$ and $G:\b\simeq\g\rel(0,1)$, then we define the \emph{concatination} of $F$ and $G$ by
+  $$(F*G)(s,t)=\begin{cases}
+    F(s,2t)&\text{for }0\leq t\leq\frac{1}{2};\\
+    G(s,2t-1)&\text{for }\frac{1}{2}\leq t\leq 1.
+  \end{cases}$$
+  which is continuous by the pasting lemma, whence $F*G:\a\simeq\g\rel(0,1)$. Transitivity.
+\end{itemize}
+
+\begin{note}
+Concatination refers to basically traversing the first path in half the time with double speed, and then the second path in the other half of the time with double speed.
+\end{note}
+
+\subsection{Fundamental Group}
+\noindent{}The equivalence class of $\a\in P(X;x,y)$ is denoted by $\ls\a\rs$ by $\ls\a\rs=\lc\a\dash\in P(X;x,y)~|~\a\simeq\a\dash\rel(0,1)\rc$. The set of all such equivalence classes is denoted by $P\ls X; x,y\rs$. Let's divert our discussion to loops at a point, say, $x_0$. We denote $P\ls X; x_0,x_0\rs$ by $\pi_1\lb X,x_0\rb\coloneq \lc\ls\s\rs~|~\s\text{ is a loop at }x_0\in X\rc$. We define a binary operation $[*]:\pi_1\lb X,x_0\rb\times\pi_1\lb X,x_0\rb\tends\pi_1\lb X,x_0\rb;~[\s][*][\t]\mapsto[\s *\t]$, where concatination $\s *\t:I\tends X$ is defined in our old way:
+$$\s *\t(s)=\begin{cases}
+  \s(2s)&\text{when }0\leq s\leq\frac{1}{2};\\
+  \t(2s-1)&\text{when }\frac{1}{2}\leq s\leq 1.
+\end{cases}$$
+The operation $[*]$ is well-defined, i.e., it does not depend on the choice of representatives $\s$ and $\t$. If $\s\simeq\s\dash\rel(0,1)$ and $\t\simeq\t\dash\rel(0,1)$ then $\s*\t\simeq\s\dash *\t\dash\rel(0,1)$. Now we observe that
+\begin{itemize}
+\item[(i)]Of course, concatination gives another loop, and hence its equivalence class gives an element of $\pi_1\lb X, x_0\rb$.
+\item[(ii)]$*$ is associative and hence so is $[*]$.
+\item[(ii)]$[e]$ is the unit in $\pi_1\lb X, x_0\rb$ where $e:I\tends X;~e(s)=x_0~\forall~s\in I$, the \emph{constant loop} at $x_0$.
+\item[(iii)]We observe that $\s\inv(s)=\s(1-s); [\s]\inv=\ls\s\inv\rs$ where $\s * \s\inv\simeq \s\inv * \s\simeq e\rel(0,1)$.
+\end{itemize}
+We conclude that $\pi_1\lb X, x_0\rb$ forms a group with $[*]$ as a binary operation, known as the \emph{fundamental group}.
+
+If $x_1\in X$ is another point in $X$ then $\pi_1\lb X, x_1\rb$ makes sense.
+
+\begin{thm}
+If $X$ is path-connected then a path $\a$ from $x_0$ to $x_1$ induces an isomorphism $\a_*$ from $\pi_1\lb X, x_0\rb$ to $\pi_1\lb X, x_1\rb$ by
+\begin{eqnarray*}
+  \a_*:\pi_1\lb X, x_0\rb&\tends&\pi_1\lb X, x_1\rb;\\
+   \ls\s\rs&\mapsto&\ls\a\inv *\s *\a\rs;\text{ describe $\a\inv$, loop $\s$, return to $x_1$}.
+\end{eqnarray*}
+\end{thm}
+\noindent{}To check that $\a_*$ is a well-defined isomorphism, we need to show that
+\begin{itemize}
+  \item[(i)]$\a_*\lb \ls \s\rs\ls\t\rs\rb=\a_*\lb \ls \s\rs\rb\a_*\lb \ls\t\rs\rb;$
+  \item[(ii)]$\lb\a_*\rb\inv=\lb\a\inv\rb_*$.
+\end{itemize}
+Because the operation $*$ is well-defined, if $\s$ is a loop based at $x_0$, then $\a\inv *\lb\s *\a\rb$ is a loop based at $x_1$. To show $\a_*$ to be a group isomorphism, we need
+\begin{eqnarray*}
+  \a_*\lb \ls \s\rs\rb\a_*\lb \ls\t\rs\rb&=&\lb\ls\a\inv * \s * \a\rs\rb\lb\ls\a\inv * \t * \s\rs\rb\\
+  &=&\ls\a\inv * \s * \a *\a\inv * \t * \s\rs\\
+  &=&\ls\a\inv\rs\ls\s *\t\rs\ls\a\rs\\
+  &=&\a_*\lb \ls \s\rs\ls\t\rs\rb.
+\end{eqnarray*}
+Let $\b$ denote the path $\a\inv$, then $\b_*$ is the inverse for $\a_*$. For each $\ls\s\rs\in\p_1\lb X, x_1\rb$, $\b_*\lb\ls \s\rs\rb=\ls\b\inv *\s *\b\rs=\ls\a *\s *\a\inv\rs\Rightarrow\a_*\lb\b_*\ls\s\rs\rb=\ls\a\inv * \a *\s *\a\inv *\a\rs=\ls \s\rs$. Similarly $\b_*\lb\a_*\ls \s\rs\rb=\ls \s\rs$ for all $\ls \s\rs\in\p_1\lb X, x_0\rb$.
+
+Moreover, if $\a\simeq\b\rel (0,1)$ for $\a,\b\in P\ls X; x_0, x_1\rs$, then $\a_*=\b_*$.
+
+Thus, it makes sense to talk about the fundamental group of a space, irrespective of the base point.
+
+\subsection{Homotopy groups}
+Let $f:X\tends Y$, and $[f]$ be the equivalence class containing $f$, called its \emph{homotopy class}. The collection of all homotopy classes $X\tends Y$ is denoted by $[X,Y]$. In the set $\p_n(X)=\ls S^n, X\rs$, we can similarly define a binary operation for $f,g:S^n\tends X$,
+
+$$\lb fg\rb\lb s_1,\dots, s_n\rb=\begin{cases}
+  f\lb 2s_1, s_2,\dots, s_n\rb,~s_1\in\ls 0, \frac{1}{2}\rs,\\
+  g\lb 2s_1-1, s_2,\dots, s_n\rb,~s_1\in\ls \frac{1}{2}, 1\rs.
+\end{cases}$$
+The identity will be the class of the constant map to the base point, and $-f\lb s_1, s_2,\dots, s_n\rb=f\lb 1-s_1, s_2,\dots, s_n\rb$. This group $\p_n(X)$ is called the \emph{$n$th (ordinary) homotopy group} of $X$. In fact, for $n\geq 2$ they are all abelian.
+
+
+\subsection{Homotopy extension property}
+
+\section{Cell complexes}
+\subsection{Weak Topology}
+\noindent{}Let $X$ be a topological space and let $W_\a, \a\in A$ be subsets of $X$ that in themselves are topological spaces. A weak topology on $X$ is the largest topology such that the inclusion map $W_\a\hookrightarrow X$ is continuous for each $\a\in A$. Equivalently, a subset $U$ of $X$ is open iff $U\cap W_\a\subseteq W_\a$ is open for each $\a\in A$. The collection $\lc U\subseteq X~|~ U\cap W_\a\subseteq_{\text{open}} W_\a~\forall~\a\in A\rc$ forms a topology on $X$, and every other topology that has the inclusion maps continuous, is contained in this weak topology.
+
+Given $\lc W_\a\rc_{\a\in A}$ we can, if they are not disjoint, consider homeomorphic spaces that are disjoint, and take disjoint union $\displaystyle\displaystyle\coprod_{\a\in A} W_\a=X$, on which we can consider the weak topology.
+
+\subsection{Identification maps}
+
+\subsection{Adjunction spaces}\noindent{}Let $X$ and $Y$ be unbased topological spaces. We consider $W\subset X$ and let $\f:W\tends Y$ be a free map, i.e., a map which need not map base point to base point. On $Y\sqcup X$ we define the equivalence relation $w\sim \f(w)$. This gives us the identification space $Y\cup_\f X$, called the \emph{adjunction space}.
+
+\subsection{Wedge}\noindent{}Let $\lb X_\a, x_\a\rb; \a\in A$ be based spaces. When we quotient the disjoint union $\displaystyle\coprod X_\a$ by $\lc x_\a~|~\a\in A\rc$, we basically identify all the base points into one, and this gives us the \emph{wedge} of $\lc \lb X_\a, x_\a\rb\rc_{\a\in A}$, denoted as $\displaystyle\bigvee_{\a\in A}X_\a$.
+
+\subsection{CW complexes}
+Note that for each $\a\in A$, there is an injection $i_\a:X_\a\tends \displaystyle\bigvee_{\a\in A}X_\a; x\mapsto \ls x\rs~\forall~x\in X_\a$. Furthermore, the maps $f_\a:X_\a\tends Y$ determine a unique map $f:\displaystyle\bigvee_{\a\in A}X_\a\tends Y~\ni~fi_\a=f_\a$.
+
+If we consider $X$ to be an unbased space and assume $\f_\a:S^{n-1}=S_\a^{n-1}\tends X$ to be free maps for $\a\in A$, these determine a free map (by pasting lemma) $\f:\displaystyle\coprod_{\a\in A}S_\a^{n-1}\tends X$. Let $E_\a^{n-1}=E^{n}$ for all $\a\in A$. Since $\displaystyle\coprod_{\a\in A}S_\a^{n-1}\subset \displaystyle\coprod_{\a\in A}E_\a^{n}$, we can form the adjunction space by quotienting with respect to $\displaystyle\coprod_{\a\in A}S_\a^{n-1}$ as: $X\cup_{\a\in A}\displaystyle\coprod_{\a\in A}E_\a^{n}$. This procedure is called \emph{attaching $n$-cells}.
+
+We consider an unbased Hausdorff topological space $X$, which we construct as follows: we consider a chain of subsets $X^0\subseteq X^1\subseteq X^2\subseteq \dots\subseteq X^{n-1}\subseteq X^n\subseteq\dots\subseteq X$, which we construct by considering $X^0$ as a $0$-cell or consisting of discrete vertices, and attaching $n$-cells to $X^{n-1}$ to form $X^n$. We have to assume that for each $n$, there exist \emph{attaching maps} $\f_\b:S^{n-1}\tends X^{n-1};\b\in B$ and we thus form $X^n\coloneq X^{n-1}\cup_\f \displaystyle\coprod_{\b\in B}E_\a^{n}$. Note that with each such formation of the disjoint union $X^{n-1}\sqcup  \displaystyle\coprod_{\b\in B}E_\a^{n}$ and subsequent quotienting, for each $\b\in B$, we get a continuous \emph{characteristic function} $\F_\b:\lb E^n, S^{n-1}\rb\tends \lb X^n, X^{n-1}\rb$ and $\F\vert_{S_\b^{n-1}}=\f_\b$. The image $\F_\b\lb E_\b^{n}-S_\b^{n-1}\rb=e_\b^n$ is called an \emph{open $n$-cell} (although it need not be open in $X$, and $\F_\b\vert_{E_\b^{n}-S_\b^{n-1}}: E_\b^{n}-S_\b^{n-1}\tends e_\b^n$ is a homeomorphism. The closure of $e_\b^n$ is $\F_\b\lb E_\b^n\rb$ and the topological boundary $\partial e_\b^n=\F_\b\lb S_\b^{n-1}\rb$. Then $\F_\b:\lb E^n, S^{n-1}\rb\tends \lb \overline{e}_\b^n, \partial e_\b^n\rb$ is a continuous function of pairs. This closed set $\overline{e}_\b^n=\F\lb E^n\rb\subseteq X^n\subseteq X$ is called a \emph{(closed) $n$-cell} that is being attached. $X$ as a whole is endowed with the weak topology with respect to all the closed cells $\lc \overline{e}_\b^n\rc_{\b\in B,n\in\naturals\cup\lc 0\rc}$. Here, $X^n-X^{n-1}$ is a disjoint union of the $e_\b^n$ and we can write $\displaystyle X^n=X^{n-1}\cup\bigcup_{\b\in B}e_\b^n$ or $\displaystyle X^n=X^{n-1}\cup\bigcup_{\b\in B}\overline{e}_\b^n$.
+
+A CW complex is called finite if it has finitely many cells, and is called finite-dimensional (dimension $N$) if there exists $N\in\naturals$ such that $X^{N-1}\neq X$ but $X^n=X$ for all $n\geq N$.
+
+%\subsection{Examples}
+% \begin{thebibliography}{99}
+%\bibitem[B]{thesis}
+ %\end{thebibliography}
+
+\end{document}
