@@ -20,7 +20,7 @@ I mostly made these notes as a part of my reading and understanding. When I foun
 - [Mathematics-1, MAL101 at IIT Bhilai as a teaching assistant](https://anamitro.github.io/math1)
 
 _______
-I shall greatly appreciate pointing out of mistakes, mathematical or grammatical (email: anamitroappu@gmail.com).
+I shall greatly appreciate pointing out of mistakes, mathematical, typographical or grammatical (email: anamitroappu@gmail.com).
 
 Copyright ©️ [Anamitro Biswas](https://anamitro.github.io) 2024
 
