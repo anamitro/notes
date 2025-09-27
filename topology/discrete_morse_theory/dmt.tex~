@@ -1,0 +1,326 @@
+\documentclass[a4paper,11pt, tikz]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{amsthm}
+%\usepackage{newspaper}
+%\date{\today}
+%\currentvolume{1430}
+%\currentissue{6}
+%\usepackage{times}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{picinpar}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+%\usepackage{fontspec}
+\usepackage{setspace}
+%\usepackage{fancyhdr}
+\usepackage{everyshi}
+\usepackage{pdfpages}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{pgfpages}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage[notextcomp]{stix}
+%\usepackage[condensed, math]{iwona}
+ \usepackage{paracol}
+ \usepackage{stmaryrd}
+ \usepackage{xurl}
+ \usepackage{wasysym}
+\usepackage{tikz}
+ \usetikzlibrary{cd}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+%\pagestyle{fancy}
+%\lhead{Curriculum vitae, Anamitro Biswas}
+%\chead{}
+%\rhead{}
+%\lfoot{}
+%\cfoot{\thepage}
+%\rfoot{}
+%\makeatletter
+%\renewcommand{\@chapapp}{Document}
+%\makeatother
+%\renewcommand\refname{\enhead\color{red}{References:}}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\enhead{RubikDoodleShadow-Regular.ttf}[Script=Latin]
+%\setmainfont{cmunrm.ttf}[Script=Latin]
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\latinfont{OfenbacherSchwabCAT.ttf}[Script=Latin]
+
+\newcommand{\rel}{\text{ rel}}
+\renewcommand{\S}{\mathbb{S}^}
+\newcommand{\CP}{\mathbb{C}\text{P}^}
+\newcommand{\RP}{\mathbb{R}\text{P}^}
+\newcommand{\Gr}{\text{Gr}_}
+\newcommand{\Cech}{\operatorname{\check{C}ech}}
+\newcommand{\VR}{\operatorname{\mathcal{V}\mathcal{R}}}
+
+%BRACKETS:
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\lc}{\left\lbrace}
+\newcommand{\rc}{\right\rbrace}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+\renewcommand{\la}{\left\langle}
+\renewcommand{\ra}{\right\rangle}
+\newcommand{\lab}{\left|}
+\newcommand{\rab}{\right|}
+\renewcommand{\mid}{\left|\right.}
+
+
+%CATEGORY THEORY:
+\newcommand{\Ab}{\mathcal{A}\mathfrak{b}}
+\newcommand{\Top}{\mathcal{T}\mathfrak{o}\mathfrak{p}}
+
+%CHARACTERISTIC CLASSES
+\newcommand{\diff}{\operatorname{D}}
+\newcommand{\Man}{\M\mathfrak{a}\mathfrak{n}}
+\newcommand{\smMan}{\M\mathfrak{a}\mathfrak{n}^\infty}
+\newcommand{\sm}{\mathcal{C}^\infty}
+
+%DASH AND BAR:
+\newcommand{\dash}{^\prime}
+\newcommand{\ddash}{^{\prime\prime}}
+\newcommand{\tdash}{^{\prime\prime\prime}}
+
+%FIELDS:
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\integers}{\mathbb{Z}}
+
+%FUZZY TOPOLOGY:
+\newcommand{\nphi}{\bigodot}
+
+%GREEK UPPERCASE:
+\newcommand{\Lm}{\Lambda}
+\newcommand{\G}{\Gamma}
+\newcommand{\D}{\Delta}
+\newcommand{\Th}{\Theta}
+\newcommand{\F}{\Phi}
+\newcommand{\W}{\Omega}
+
+%GREEK LOWERCASE:
+\newcommand{\m}{\mu}
+\newcommand{\lm}{\lambda}
+\renewcommand{\l}{\lambda}
+\newcommand{\vs}{\varsigma}
+\newcommand{\g}{\gamma}
+\renewcommand{\t}{\tau}
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\e}{\varepsilon}
+\newcommand{\dt}{\delta}
+\newcommand{\f}{\varphi}
+\newcommand{\z}{\zeta}
+\newcommand{\s}{\sigma}
+\newcommand{\p}{\pi}
+\newcommand{\y}{\eta}
+\renewcommand{\th}{\theta}
+\newcommand{\dl}{\partial}
+\newcommand{\w}{\omega}
+\newcommand{\x}{\chi}
+
+%GROUP THEORY:
+\newcommand{\inv}{^{-1}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+
+%HOMOLOGICAL ALGEBRA:
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\im}{\operatorname{im}~}
+%\newcommand{\lsft}{shift left=1.5ext}
+
+%HOMTOPY GROUPS:
+\newcommand{\htopo}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\topo}{\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\htop}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}}
+\newcommand{\cattop}{\mathcal{T}\mathfrak{o}\mathfrak{p}}
+
+
+%LINEAR ALGEBRA
+%\newcommand{\b}{\textbf{}}
+
+
+%LOGIC:
+\renewcommand{\implies}{\Rightarrow}
+
+%MATHCAL:
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\List}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\Pa}{\mathcal{P}}
+\newcommand{\La}{\mathcal{L}}
+\newcommand{\Ta}{\mathcal{T}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\Y}{\mathcal{Y}}
+
+%MATHFRAK:
+\newcommand{\Mf}{\mathfrak{M}}
+\newcommand{\Nf}{\mathfrak{N}}
+\newcommand{\gf}{\mathfrak{g}}
+\newcommand{\mfi}{\mathfrak{i}}
+\newcommand{\mfj}{\mathfrak{j}}
+\newcommand{\mfa}{\mathfrak{A}}
+\newcommand{\betti}{\mathfrak{b}}
+
+%MATH BOLD:
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfg}{\mathbf{g}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\bfy}{\mathbf{y}}
+\newcommand{\bfzero}{\mathbf{0}}
+
+
+%MAPS:
+\newcommand{\tends}{\rightarrow}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\incl}{\hookrightarrow}
+
+
+
+%SET THEORY:
+\newcommand{\cl}{\overline}
+\newcommand{\intr}{^\circ}
+\newcommand{\ir}{^\text{int}}
+\newcommand{\comp}{^C}
+\newcommand{\where}{\bigg| }
+\newcommand{\lmid}{\left\vert}
+\newcommand{\rmid}{\right\vert}
+
+%HEADINGS:
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{obs}[thm]{Observation}
+%\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{note}[thm]{Note}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{prob}[thm]{Problem}
+\newcommand{\Ob}{\text{Ob}}
+\newcommand{\Eq}{\text{Eq}}
+
+%\setmainfont{Cormorant Garamond SemiBold}
+\urlstyle{same}
+\usepackage{tikzpagenodes}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\begin{document}
+\title{Discrete Morse Theory}
+\author{Anamitro Biswas\\Webpage: \url{https://anamitro.github.io}}
+\maketitle
+\section{Simplicial complexes}
+\subsection{Affine independence}
+\subsection{Geometric simplicial complex}
+\subsection{Abstract simplicial complex}
+\subsection{Equivalence}
+\subsection{Simplicial maps}
+\section{Collapsing}
+\section{Discrete Morse functions}
+\noindent{}For $K$ an abstract simplicial complex, a map $f:K\tends \reals$ is called a \emph{discrete Morse function} if $\forall~\s^k\in K$
+\begin{itemize}
+  \item[(i)]$e_1=\lab\lc\t^{k-1}\in K\mid f\lb \tau\rb\geq f\lb \s\rb\rc\rab\leq 1$;
+  \item[(ii)]$e_2=\lab\lc\t^{k+1}\in K\mid f\lb \tau\rb\leq f\lb \s\rb\rc\rab\leq 1$.
+\end{itemize}
+Every function $g$ that \emph{respects dimension} in the sense that for each $\s^{k-1}\subset \t^k\in K$, $g\lb \s\rb<g\lb \t\rb$ is a DMF. On the other hand, a DMF \emph{almost} respects dimension by ensuring that each simplex can have one ``exceptional'' facet and one ``exceptional'' co-face; and in fact, not both. To arrive at a contradiction by assuming that for a face $\s\cup\lc v_1\rc\in K$, where $\s\in K$ and $v_1,v_2\in K_0$, $f\lb \s\rb\geq f\lb \s\cup\lc v_1\rc\rb\geq f\lb \s\cup \lc v_1, v_2\rc\rb$, we have for $\s\cup\lc v_2\rc\in K$, $f\lb \s\cup \lc v_1, v_2\rc\rb>f\lb \s\cup \lc v_2\rc\rb>f\lb\s\rb$, the first strict inequality since the exceptional coface of $\s$ is $\s\cup\lc v_1\rc$ and the second one since the exceptional face of $\s\cup\lc v_1,v_2\rc$ is $\s\cup\lc v_1\rc$. Simplices with exceptions form disjoint pairs of a simplex $\t$ and its facet $\s$, termed \emph{regular pairs}. It encodes an arrow $\s\tends \t$ in the sense that $\s$ can be collapsed onto $\t$. Consectutive collapsings end up in a simplex which can't be collapsed any more, or a simplex without any exception, called a \emph{critical simplex}.
+
+If $n_i$ is the number of critical simplices of dimension $i$ in $K$, $\x=\displaystyle\sum_{i=0}^\infty \lb -1\rb^in_i$.
+
+A \emph{discrete vector field} is a disjoint collection of such pairs $\lb \s_i, \t_i\rb$ where for each $i$, $\s_i$ is a facet of $\t_i$. Each pair represents as an arrow $\tends_i$. The disjointness means that each simplex can be a member of at most one pair in a vector field.
+
+If a discrete vector field $\lc\lb\s_i, \t_i\rb\rc_{i\in I}$ is given on a simplicial complex $K$, and $p\in\naturals$, a \emph{$p$-path} is a sequence
+$$\s_{i_1}^{p-1}\tends \t_{i_1}^p\geq \s_{i_2}^{p-1}\tends \t_{i_2}^p\geq\s_{i_3}^{p-1}\dots\tends\t_{i_k}^p\geq \s_{i_{k+1}}^{p-1},$$
+each arrow in the discrete vector field, and $\s_{i_j}$ is a facet of $\t_{i_{j-1}}$. It's a \emph{cycle} is $\s_1=\s_{k+1},~k\geq 1$, and \emph{acyclic} if it admits no cycle. A critical simplex can only appear as the last simplex in any $p$-path in a discrete vector field.
+
+Regular pairs of a DMF form a discrete vector field. A discrete vector field formed by the regular pairs of a DMF is called a \emph{gradient vector field}.
+
+\begin{thm}
+Each gradient vector field is acyclic. On the other hand, each acyclic discrete vector field on a simplicial complex $K$ is induced by some DMF, i.e., is a gradient vector field.
+\end{thm}
+\noindent{}\emph{Proof.} Given a DMF, in the induced discrete vector field, function values decrease along any $p$-path, since $f\lb \s_{i_j}\rb\geq f\lb \t_{i_j}\rb$ being the only exception for $f\lb \t_{i_j}\rb$, $f\lb \t_{i_j}\rb>f\lb \s_{i_{j+1}}\rb$ for all $j$. Thus, \emph{each gradient vector field is acyclic}. COMPLETE\qed
+
+However, different DMF's on a simplicial complex might induce the same DVF, e.g., if $f$ is a DMF, then so are $e^f$ and $3f$, and all three induce the same DVF. Our primary interest in DVF's lies in their encodings of collapses and deformations-simplifications of a simplicial complex. A DMF represents a convenient but not unique way of encoding a DVF.
+\begin{prop}
+Suppose the critical simplices of an acyclic DVF on $K$ form a subcomplex $L\leq K$. Then $\exists$ a collapse $K\tends L$, and so, $K\simeq L$.
+\end{prop}
+\noindent{}For $\s\in K\setminus L$, we claim the existence of a regular pair $\lb \s,\t\rb$ where $\s$ is a \emph{free face} of $\t$, whence we can perform an elementary collapse, and proceed using the same claim on the resulting complex. To prove the claim, let $n$ denote the maximal dimension of a simplex in $K\setminus L$. There exist $n$-path(s) in the DVF (of which we take the maximal), and $\s\tends\t$ be its first regular pair. Now, $\s\leq \t$, and if $\s$ were a facet of some other simplex $\t'$ in $K\setminus L$, then we can extend the $n$-path as $\t'\geq \s\tends\t\geq\dots$, contradicting its maximality. On the other hand, if $\s$ were a facet of some simplex $\t'$ in $L$, then $\s\in L$ as $L$ is a subcomplex, a contradiction.\qed
+\section{Morse homology}
+\noindent{}An \emph{oriented $p$-path} from $\s_1^{p-1}$ to $\s_{k+1}^{p-1}$ is a $p$-path consisting of oriented simplices, such that for each $j$ the orientation induced by $\t_j$ on its facets (i) does not match $\s_j$ and (ii) matches $\s_{j+1}$. One could say that the simplices $\t_{i_j}$ in an oriented $p$-path are oriented consistently along the path.
+
+Let us start with a simplicial complex $K$, an gradient vector field on it, and $\bF$ an (algebraic) field to provide efficient algebraic constructions. For each $i$, let $n_i$ denote $\#$ critical $i$-simplices. For $p\in\naturals\cup\lc 0\rc$, a \emph{Morse $p$-chain} is a formal sum $\sum_{i=1}^{n_p}\l_i\s_i^p;~\l_i\in\bF,~\s_i^p$ an oriented critical $p$-simplex in $K$ for each $i$. The module of all such Morse $p$-chains is the \emph{$p$-dimensional Morse chain group} $\C_p\cong \bF^{n_p}$. Now, we have to define the boundary map. Given an oriented critical $p$-simplex $\t$, let $\dt\lb \t\rb$ be its collection of facets with induced orientation. For each $\s\in\C_{p-1}$, let $\a_{\t,\s}\coloneq \displaystyle\sum_{\s'\in\dt\lb \t\rb}\#\lc\text{oriented paths from $\s'$ to $\s$}\rc$. Since we are considering oriented simplices, $\a_{\t,\s}$ counts paths different from those $\a_{\t,-\s}$ counts. For $\t\in\C_p$, we define $\dl_p\t\coloneq \displaystyle\sum_{i=1}^{n_{p-1}}\lb\a_{\t, \s_i}-\a_{\t, -\s_i}\rb\s_i$. The oriented paths constituting the boundary map model how arrows stretch the boundary of a critical $p$-simplex towards critical $\lb p-1\rb$-simplices. As we have got a Morse chain complex $\dots\xrightarrow{\dl}\C_n\xrightarrow{\dl}\C_{n-1}\xrightarrow{\dl}\dots \xrightarrow{\dl}\C_1\xrightarrow{\dl}\C_0\xrightarrow{\dl}0$ with $\dl^2=0$, we can define \emph{Morse homology} of a gradient vector field on $K$ as $\cH\lb K;\bF\rb=\ker \dl_p/\im \dl_{p+1}$. This is isomorphic to standard simplical and singular homologies. One way to see this is that nowhere do we change the homotopy type of the complex.
+\paragraph*{Weak Morse inequalities.}For each $p$, $\#$ critical $p$-simplices is greater than or equal to the corresponding Betti number: $n_p\geq \betti_p$.
+
+[Proof]
+\section{Computations}
+\subsection{An easy complex}
+I have used the same complex mentioned as Example 11.3.8 in \cite{V24}.
+\subsubsection{Collapsings up to critical simplex}
+\begin{center}
+\includegraphics[width=0.35\textwidth]{1.png}\includegraphics[width=0.3\textwidth]{2.png}
+\includegraphics[width=0.3\textwidth]{3.png}
+\end{center}
+\subsubsection{Morse chains}
+There is a critical vertex $\la a \ra$ and a critical edge $\la b,e\ra$. Thus $\C_0\cong \C_1\cong\bF$, and other Morse chains are trivial.
+\subsubsection{Oriented paths}
+Now to calculate the boundary maps, we have $\dt\lb \la b,e\ra\rb=\lc\la e\ra, - \la b\ra\rc$, as per induced orientation, and one oriented 1-path from $\la e\ra$ to $\la a\ra$, giving the collapse $\la e\ra\tends\la e,a\ra\geq \la a\ra$. Similarly, there is one oriented 1-path from $-\la b\ra$ to $-\la a\ra$.\subsubsection{Boundary maps}
+This gives us $\a_{\la b,e\ra,\la a\ra}=\a_{\la b,e\ra,-\la a\ra}=1$, and hence $\dl\la b,e\ra=\lb\a_{\la b,e\ra,\la a\ra}-\a_{\la b,e\ra,-\la a\ra}\rb.\la a\ra=0$.
+\subsubsection{Chain complex and homology}
+$$\dots \tends 0\xrightarrow{\dl_2=\id_0}\bF\xrightarrow{\dl_1= 0}\bF\xrightarrow{\dl_0=0}\bF$$
+So, $\cH_0\lb K\rb\cong\cH_1\lb K\rb\cong \bF$, and higher homology groups are trivial.
+
+\subsection{Torus}
+\subsubsection{Triangulation of a torus}
+\subsubsection{Collapsing and Morse chain groups}
+It is easy to check that the torus can be serially collapsed on to the simplex colored green. Let's call it $\t$, which is homotopic to the entire torus. We see that $x$ is a critical vertex, $a$ and $b$ are critical edges, and $\t$ is the critical triangle. The Morse chain complex is of the form $\dots\tends 0\tends \bF\tends \bF^2\tends \bF\tends 0$. We need now to compute the boundary function.
+\subsubsection{Boundary functions and homology}
+We see that $\dt\lb \t\rb$ has 3 edges, which we name as $\t_1, \t_2$ and $\t_3$ as in the figure. From $\t_1$, there is one oriented 2-path to critical edge $-\la a\ra$ (marked in blue) and another oriented 2-path to critical edge $-\la b\ra$ (marked in red). From $\t_2$, we have such two oriented 2-paths to $\la a\ra$ and $\la b\ra$ respectively marked in green and yellow. No oriented 2-path from $\t_3$ end up in a critical edge. Thus, $\dl\lb \t\rb=-\la a\ra-\la b \ra+\la a \ra+\la b \ra=0$. Similarly, $\dl a=\dl b=0$, so $\dl_1\equiv 0$. This gives the Morse chain complex:
+$$\dots\tends 0\tends \bF\xrightarrow{\dl_2\equiv 0} \bF^2\xrightarrow{\dl_1\equiv 0} \bF\tends 0.$$
+Thus, $\cH_0\lb K\rb\cong \cH_2\lb K\rb \cong \bF$ and $\cH_1\lb K\rb\cong\bF^2$.
+\section{Grid graphs}
+\section{Computation with grid graph}
+%\nocite{*}
+ \begin{thebibliography}{99}
+\bibliographystyle{alpha}
+\bibitem[V24]{V24}\v{Z}. Virk, \emph{Introduction to Persistent Homology}, ed. 1.03, Faculty of Computer and Information Science, University of Ljubljana (2024).
+  \end{thebibliography}
+
+\end{document}
