@@ -10,6 +10,7 @@ I mostly made these notes as a part of my reading and understanding. When I foun
 - [Discrete Morse Theory](topology/discrete_morse_theory/dmt.pdf) [ ” ]
 
 ## Algebra
+- [Gaussian integers](gaussian/gaussian.pdf)
 - [Module Theory](module_theory.pdf)
 - [Ext Functor](algebra/ext_functor/ext.pdf)
 
