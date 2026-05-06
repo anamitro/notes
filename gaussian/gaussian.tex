@@ -1,0 +1,195 @@
+\documentclass[a4paper,11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{textcomp}
+%\usepackage{newspaper}
+%\date{\today}
+%\currentvolume{1430}
+%\currentissue{6}
+%\usepackage{times}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{picinpar}
+%uasage of picinpar:
+%\begin{window}[1,l,\includegraphics{},caption]xxxxx\end{window}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[nohead, nomarginpar, margin=1in, foot=.25in]{geometry}
+\usepackage{lmodern}
+%\usepackage{fontspec}
+\usepackage{setspace}
+%\usepackage{fancyhdr}
+\usepackage{everyshi}
+\usepackage{pdfpages}
+\usepackage{indentfirst}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[notextcomp]{stix}
+ \usepackage{paracol}
+ \usepackage{stmaryrd}
+ \usepackage{xurl}
+ \usepackage{tikz-cd}
+ \usetikzlibrary{cd}
+\usepackage[left=1.6cm, right=1.6cm, top=1.6cm, bottom=2cm]{geometry}
+%\pagestyle{fancy}
+%\lhead{Module Theory}
+%\chead{}
+%\rhead{Anamitro Biswas}
+%\lfoot{}
+%\cfoot{\thepage}
+%\rfoot{}
+%\makeatletter
+%\renewcommand{\@chapapp}{Document}
+%\makeatother
+%\renewcommand\refname{\enhead\color{red}{References:}}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\enhead{RubikDoodleShadow-Regular.ttf}[Script=Latin]
+%\setmainfont{cmunrm.ttf}[Script=Latin]
+%\newfontfamily\bn{TiroBangla-Regular.ttf}[Script=Bengali]
+%\newfontfamily\latinfont{OfenbacherSchwabCAT.ttf}[Script=Latin]
+
+\renewcommand{\refname}{Further reading:}
+\newcommand{\comp}{^C}
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\lc}{\left\lbrace}
+\newcommand{\rc}{\right\rbrace}
+\newcommand{\m}{\mu}
+\newcommand{\lm}{\lambda}
+\newcommand{\Lm}{\Lambda}
+\newcommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+\newcommand{\al}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ir}{^\text{int}}
+\newcommand{\e}{\varepsilon}
+\newcommand{\dt}{\delta}
+\newcommand{\D}{\Delta}
+\newcommand{\f}{\varphi}
+\newcommand{\z}{\zeta}
+\newcommand{\s}{\sigma}
+\newcommand{\vp}{\varphi}
+%\newcommand{\vs}{\varsigma}
+\newcommand{\cl}{\overline}
+\newcommand{\intr}{^\circ}
+\newcommand{\tends}{\rightarrow}
+\newcommand{\ls}{\left[}
+\newcommand{\rs}{\right]}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\List}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\Mf}{\mathfrak{M}}
+\newcommand{\Nf}{\mathfrak{N}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\R}{\mathcal{R}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\naturals}{\mathbb{N}}
+\newcommand{\primes}{\mathbb{P}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\Pa}{\mathcal{P}}
+\newcommand{\La}{\mathcal{L}}
+\newcommand{\Ta}{\mathcal{T}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\gf}{\mathfrak{g}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bfa}{\mathbf{a}}
+\newcommand{\bfb}{\mathbf{b}}
+\newcommand{\bfg}{\mathbf{g}}
+\newcommand{\mfa}{\mathfrak{A}}
+\newcommand{\mfi}{\mathfrak{i}}
+\newcommand{\mfj}{\mathfrak{j}}
+\newcommand{\mcS}{\mathcal{S}}
+\newcommand{\bft}{\mathbf{t}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\bfy}{\mathbf{y}}
+\newcommand{\bfzero}{\mathbf{0}}
+\newcommand{\V}{\mathcal{V}}
+\newcommand{\X}{\mathcal{X}}
+\newcommand{\Y}{\mathcal{Y}}
+\newcommand{\nphi}{\bigodot}
+\newcommand{\htopo}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\topo}{\mathcal{T}\mathfrak{o}\mathfrak{p}_*}
+\newcommand{\htop}{\mathcal{H}\mathfrak{o}\mathcal{T}\mathfrak{o}\mathfrak{p}}
+\newcommand{\cattop}{\mathcal{T}\mathfrak{o}\mathfrak{p}}
+\newcommand{\dash}{^\prime}
+\newcommand{\Ob}{\text{Ob}}
+\newcommand{\Eq}{\text{Eq}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\Ann}{\text{Ann}}
+\newcommand{\Hom}{\text{Hom}}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{obs}[prop]{Observation}
+%\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{claim}[prop]{Claim}
+\newtheorem{note}[prop]{Note}
+\newtheorem{notation}[prop]{Notation}
+\newtheorem{rem}[prop]{Remark}
+\newtheorem{prob}[thm]{Problem}
+
+%\setmainfont{Cormorant Garamond SemiBold}
+\urlstyle{same}
+
+\begin{document}
+\title{Gaussian Integers}
+\author{Anamitro Biswas}
+\maketitle
+\begin{center}
+Copyright \textcopyright~Anamitro Biswas 2024\\
+Email: anamitroappu@gmail.com\\
+License: CC BY-NC-SA 4.0
+\end{center}
+
+\noindent{}See the primes $1$ modulo $4$: $5=1^2+2^2$, $13=2^2+3^2$, $17=1^2+4^2$ etc. They turn out to be expressible as $p=x^2+y^2$ where $x,y\in\Z$. In fact, this is true for all primes $p\in\primes$, $p\equiv 1 \mod 4$. For proving this, we need the fact that the Gaussian integers $\Z[i]=\lc a+bi~|~a,b\in\Z\rc$ form an Euclidean domain, which implies it is a uniform factorization domain. Given $\alpha,\beta\in\Z[i]$ we need to prove that there exists $\gamma\in\Z[i]$ such that $\left|\frac{\alpha}{\beta}-\gamma\right|<1$, where $|x+iy|=\lb x+iy\rb\lb x-iy\rb=x^2+y^2$ for $x+iy\in\Z[i]$. But $\Z[i]$ forms a lattice in $\complex$ with mesh diagonal length $\sqrt{2}$ and so there must be a $\gamma\in\Z[i]$ such that given $\alpha,\beta\in\Z[i]$, $\left|\frac{\alpha}{\beta}-\gamma\right|\leq\frac{1}{2}\sqrt{2}=\frac{1}{\sqrt{2}}$. Now, since the Gaussian integers are a UFD, what we need to prove is that $p$ facts as $\lb x+iy\rb\lb x-iy\rb$ in $\Z[i]$, and is no more a prime.
+
+Let $p=4n+1$, $n\in\naturals$. By Wilson's theorem, $-1\equiv \lb p-1\rb\mod p=\left[1.2\dots.(2n)\right]\left[\lb p-1\rb\lb p-2\rb\dots \lb p-2n\rb\right]\equiv \lb 2n\rb!\left[(-1)^{2n}\lb 2n\rb !\right]\mod p=\lb\lb 2n \rb!\rb^2\equiv -1\mod p$. Therefore $\lb 2n\rb!$ is a solution to $x^2+1\equiv 0\mod p$. Now since $p\in\primes$, $2n<p$, $p\nmid x=\lb 2n\rb!$, i.e., $\lb x+i\rb\lb x-i\rb$ is divisible by $p$ in $\Z[i]$ but $\dfrac{x}{p}\pm\dfrac{i}{p}\not\in\Z[i]$, so $p$ is not a prime in $\Z[i]$. Therefore there exist $x_1+iy+1, x_1-iy_1\in\Z[i]$ such that $p=x_1^+y_1^2$.
+
+When we study algebraic extension of a ring, the two most important points to cover are characterization of its prime elements and units. Having defined the ring of Gaussian integers, our next objective is to find all its units and primes. Define norm $N:\Z[i]\rightarrow\Z^+\cup\lc 0\rc;~x+iy\mapsto \lb x+iy\rb\lb x-iy\rb=x^2+y^2$. We know that $\alpha\in\lb \Z[i]\rb^\times\Leftrightarrow N\lb\alpha\rb=1$. For, if $\alpha$ is a unit, we find some $\beta\in\Z[i]$ such that $\alpha\beta=1\Rightarrow N\lb \alpha\beta\rb=N(1)=1\Rightarrow N\lb\alpha\rb N\lb \beta\rb=1\Rightarrow N\lb\alpha\rb=1$. On the other hand, let $\alpha=a+bi$. Then $N\lb\alpha\rb=a^2+b^2=1\Rightarrow$ either $a\in\lc \pm 1\rc, b=0$ or $a=0, b\in\lc\pm 1\rc$. Therefore the units in $\Z[i]$ are $\lc \pm 1, \pm i\rc$, all of which have norm 1. So, we have found the units. And we know that $p\in\primes, p\equiv 1\mod 4$ are not primes in $\Z[i]$. But, $p\in\primes, p\equiv 3\mod 4$ are.
+
+Because, let's say such a $p$ can be factorized into non-units $\alpha\beta$. Then $N(p)=N\lb \alpha\rb N\lb \beta\rb$, i..e., $p^2=N\lb \alpha\rb N\lb \beta\rb$ and since $\alpha, \beta$ are non-units, $N\lb \alpha\rb=N\lb \beta\rb=p$. Let $\alpha=a+bi$. Then $N\lb \alpha\rb=a^2+b^2\in\lc 0\mod 4, 1\mod 4\rc~\rightarrow \leftarrow $.
+
+We say that two elements $a$ and $b$ in a ring are \emph{associated} if one can be obtained from the other through multiplication by a unit, and we write as: $a\sim b$. Let $\pi$ be a prime in $\Z[i]$. Then upto association, $\pi$ is one of the following:
+\begin{enumerate}
+  \item $\pi=1+i$;
+  \item $\pi=a+bi$ where $a,b\in\Z$ such that $a^2+b^2=p\equiv 1\mod 4$;
+  \item $\pi=p\equiv 3\mod 4$ where $p\in\primes$.
+\end{enumerate}
+In cases (1) and (2), if $\pi=\alpha\beta$, then $N\lb \pi\rb=N\lb\alpha\rb N\lb\beta\rb=p\in\primes$. One of $\alpha$ and $\beta$ is a unit. In (3), if $\pi=\alpha\beta$ where $\alpha,\beta$ are non-units, $p^2=N\lb\alpha\rb N\lb\beta\rb\Rightarrow N\lb\alpha\rb=p$. If $\alpha=a+bi$, then $p=a^2+b^2\equiv 1\mod 4\rightarrow \leftarrow $.
+
+\begin{thebibliography}{AAAA}
+\bibliographystyle{alpha}
+%\bibitem[A]{A}M. Artin, \textit{Algebra}, Prentice Hall of India (1994).
+\bibitem[DF]{DF}D. S. Dummit and R. M. Foote, \textit{Abstract Algebra}, Prentice Hall ed. 2 (1991).
+%\bibitem[H]{H} I. N. Herstein, \textit{Topics in Algebra} ed. 2, Wiley (2019).
+\bibitem[N]{N}J. Neukrich, \textit{Algebraic Number Theory} tr. N. Schappacher, Springer (1999).
+\end{thebibliography}
+
+\end{document}
